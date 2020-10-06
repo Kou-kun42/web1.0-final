@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Veer Pandya - Final - Web 1.0</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div id="left">
+        <section id="student-info">
+          <h1>Veer Pandya</h1>
+          <p>My favorite color is Blue and I wear Nike</p>
+        </section>
+
+        <section id="data-input">
+          <h1>Font Styler</h1>
+          <label>
+            Font Size
+            <input id="input-size" type="number" value="16" />
+          </label>
+          <label>
+            Font Family
+            <select id="select-font">
+              <option value="Helvetica">Helvetica</option>
+              <option value="Arial">Arial</option>
+              <option value="Times New Roman">Times New Roman</option>
+              <option value="Georgia">Georgia</option>
+            </select>
+          </label>
+          <label>
+            Font Weight
+            <select id="select-weight">
+              <option value="normal">Normal</option>
+              <option value="bold">Bold</option>
+              <option value="bolder">Bolder</option>
+              <option value="lighter">Lighter</option>
+            </select>
+          </label>
+          <label>
+            Font Style
+            <select id="select-style">
+              <option value="normal">Normal</option>
+              <option value="italic">Italic</option>
+              <option value="oblique">Oblique</option>
+            </select>
+          </label>
+          <label>
+            Font Color
+            <input id="input-color" type="color" value="#000000" />
+          </label>
+          <label>
+            Background Color
+            <input id="input-bg-color" type="color" value="#ffffff" />
+          </label>
+          <label>
+            Enter Text
+            <textarea id="enter-text">Sample Text</textarea>
+          </label>
+        </section>
+      </div>
+
+      <div id="right">
+        <section id="headline-display">
+          <h1 id="display">Sample Text</h1>
+        </section>
+
+        <section id="data-output">
+          <h1>Font Settings</h1>
+          <pre><code>#headline-display {
+            font-size: <span id="show-size">16</span>px;
+            font-family: <span id="show-font">Helvetica</span>;
+            font-weight: <span id="show-weight">normal</span>;
+            font-style: <span id="show-style">normal</span>;
+            color: <span id="show-color">#000000</span>;
+            background-color: <span id="show-bg-color">#ffffff</span>;
+        }</code></pre>
+        </section>
+      </div>
+    </main>
+    <script src="scripts.js" type="module"></script>
+  </body>
+</html>
